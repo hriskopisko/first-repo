@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Student
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string firstName = Console.ReadLine();
+            string lastName = Console.ReadLine();
+            int clas = int.Parse(Console.ReadLine());
+            double uspeh = double.Parse(Console.ReadLine());
+            int izvineni = int.Parse(Console.ReadLine());
+            int neizvineni = int.Parse(Console.ReadLine());
+            Student student1 = new Student(firstName, lastName, clas, uspeh, izvineni, neizvineni);
+            Console.WriteLine(student1.ToString());//
+        }
+    }
+}
